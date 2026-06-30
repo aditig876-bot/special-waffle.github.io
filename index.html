@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clean Webpage</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        /* Layout Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        /* Header & Nav */
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0066cc;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Grid Content */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Sidebar Styling */
+        aside {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+        }
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My Website</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-layout">
+            <main>
+                <h2>Main Article Title</h2>
+                <p>This is where your main content goes. You can add text, images, forms, or videos here to build out your page.</p>
+                <br>
+                <p>The layout uses CSS Grid, meaning it is responsive and will automatically stack vertically on mobile screens.</p>
+            </main>
+
+            <!-- Sidebar -->
+            <aside>
+                <h3>Quick Links</h3>
+                <p>Useful side notes, announcements, or category links can live right here.</p>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 My Webpage. Built with clean HTML & CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
